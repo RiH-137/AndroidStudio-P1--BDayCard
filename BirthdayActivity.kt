@@ -17,7 +17,7 @@ class BirthdayActivity : AppCompatActivity() {
        so we use companion object in LINE 8 and instead of using "name" we change to "NAME_EXTRA"
         And we have to change in both MainActivity and BirthdayActivity */
 
-        var name=intent.getStringExtra("name_extra")
+        val name=intent.getStringExtra("name_extra")
         //activity_birthday_id.text="Happy BirthDay $name!"
         var txtview : TextView=findViewById(R.id.activity_birthday_id)
         txtview.text="Happy Birthday $name ..... !"
