@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     fun btn(View:View){
 
-        var name = findViewById<EditText>(R.id.editTextTextPersonName).editableText.toString()
+        val name = findViewById<EditText>(R.id.editTextTextPersonName).editableText.toString()
         Toast.makeText(this, "Creating Birthday Card for $name", Toast.LENGTH_LONG).show()
         val intent = Intent(this, BirthdayActivity::class.java).also {
         //    intent.putExtra("name",name)             ----> here "name" is a key
